@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Fomr</title>
+    <link rel="stylesheet" href="./asset/css/dndk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css" class="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/fontawesome.min.css ">
+    <style>
+        body {
+            height: auto;
+            width: auto;
+        }
+        
+        #form {
+            width: 400px;
+            height: 220px;
+            border: 2px solid rgb(21, 192, 149);
+            margin: auto;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+        
+        .tieude {
+            width: auto;
+            height: 30px;
+            background-color: aqua;
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+        
+        .label {
+            display: inline-block;
+            width: 110px;
+            padding-left: 10px;
+            font-weight: bold;
+            color: rgba(5, 66, 3, 0.788);
+        }
+        
+        input {
+            border: 1px solid rgb(110, 136, 192);
+            width: 250px;
+            border-radius: 5px;
+        }
+        
+        .button {
+            width: 10px;
+            margin: 10px 10px 0 150px;
+            padding: auto;
+        }
+        
+        .dangnhap {
+            color: aqua;
+            background-color: black;
+            border: 1px solid;
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="grid">
+            <nav class="header_navbar-logo">
+
+            </nav>
+            <nav class="header_navbar-search">
+                <div class="box">
+                    <form class="sbox" action="/search" method="get">
+                        <input class="stext" type="text" name="q" placeholder="Tìm kiếm Sản phẩm">
+                        <a class="sbutton" type="submit" href="javascript:void(0);">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </form>
+                </div>
+            </nav>
+            <nav class="header_navbar">
+                <ul class="header_navbar-list">
+                    <li class="header_navbar-item">
+                        <a href="index.html">Kết Nối Đến Với Shop NEROS</a>
+                    </li>
+
+                </ul>
+                <ul>
+                    <li class="header_navbar-item header_navbar-item-separate">
+                        <a href="./gopy.html">Góp Ý</a>
+                    </li>
+                    <li class="header_navbar-item header_navbar-item-separate">
+                        <a href="./muahang.html" class="header_navbar-item-link ">Mua Hàng</a>
+                        <div class="header_notify">
+                            <header class="header_notify-header">
+
+                            </header>
+                        </div>
+                    </li>
+                    <li class="header_navbar-item">
+                        <a href="hotro.html" class="header_navbar-item-link header_navbar-item-separate">Hỗ Trợ</a>
+                    </li>
+                    <li class="header_navbar-item header_navbar-item-strong">Tài Khoản
+                        <ul>
+                            <li class="menucon">
+                                <a href="./DangKi.html">Đăng Kí</a>
+                            </li>
+                            <li class="menucon">
+                                <a href="DangNhap.html">Đăng Nhập</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <form id="form" action="">
+        <label class="tieude" for="">THÀNH VIÊN ĐĂNG NHẬP</label>
+        <p>
+            <label class="label" for="">Tên đăng nhập</label>
+            <input type="text" minlength="4" maxlength="20" name="" id="" placeholder="Nhập từ 4-20 kí tự">
+        </p>
+        <p>
+            <label class="label" for="">Mật khẩu</label>
+            <input type="password" minlength="8" maxlength="20" name="" id="" placeholder="Nhập từ 8-20 kí tự">
+        </p>
+        <p>
+            <input class="button" type="radio">Ghi nhớ
+            <br>
+            <a href="#" class="button" style="text-decoration: none;">Quên mật khẩu</a>
+        </p>
+
+        <p>
+            <input class="dangnhap" style="margin-left: 90px;" type="submit" value="Đăng nhập">
+            <a href="dangky.html"><input class="dangnhap" type="button" value="Đăng ký">
+            </a>
+
+        </p>
+    </form>
+</body>
+
+</html>

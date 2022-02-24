@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css" class="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.0.0-web/css/fontawesome.min.css ">
+    <style>
+        body {
+            background-color: aliceblue;
+            width: auto;
+            height: auto;
+        }
+        
+        #form {
+            width: 400px;
+            height: 220px;
+            border: 1px solid gray;
+            margin: auto;
+            border-radius: 20px;
+        }
+        
+        .tieude {
+            width: 400px;
+            margin: auto;
+            height: 30px;
+            font-weight: bold;
+            background-color: bisque;
+            display: inline-block;
+            text-align: center;
+            padding-top: 10px;
+            color: cornflowerblue;
+            font-size: large;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        
+        .label {
+            width: 110px;
+            padding-left: 10px;
+            display: inline-block;
+            font-weight: bold;
+            color: rgb(23, 10, 145);
+        }
+        
+        .input {
+            border: 1px solid rebeccapurple;
+            border-radius: 10px;
+            width: 250px;
+        }
+        
+        .end {
+            text-align: center;
+        }
+        
+        .end input {
+            height: 25px;
+            border: 2px solid rebeccapurple;
+            border-radius: 5px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="grid">
+            <nav class="header_navbar-logo">
+
+            </nav>
+            <nav class="header_navbar-search">
+                <div class="box">
+                    <form class="sbox" action="/search" method="get">
+                        <input class="stext" type="text" name="q" placeholder="Tìm kiếm Sản phẩm">
+                        <a class="sbutton" type="submit" href="javascript:void(0);">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </form>
+                </div>
+            </nav>
+            <nav class="header_navbar">
+                <ul class="header_navbar-list">
+                    <li class="header_navbar-item">
+                        <a href="index.html">Kết Nối Đến Với Shop NEROS</a>
+                    </li>
+
+                </ul>
+                <ul>
+                    <li class="header_navbar-item header_navbar-item-separate">
+                        <a href="./gopy.html">Góp Ý</a>
+                    </li>
+                    <li class="header_navbar-item header_navbar-item-separate">
+                        <a href="./muahang.html" class="header_navbar-item-link ">Mua Hàng</a>
+                        <div class="header_notify">
+                            <header class="header_notify-header">
+
+                            </header>
+                        </div>
+                    </li>
+                    <li class="header_navbar-item">
+                        <a href="./hotro.html" class="header_navbar-item-link header_navbar-item-separate">Hỗ Trợ</a>
+                    </li>
+                    <li class="header_navbar-item header_navbar-item-strong">Tài Khoản
+                        <ul>
+                            <li class="menucon">
+                                <a href="./DangKi.html">Đăng Kí</a>
+                            </li>
+                            <li class="menucon">
+                                <a href="DangNhap.html">Đăng Nhập</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <form id="form" action="xuly,php">
+        <label class="tieude" for="">ĐĂNG KÝ</label>
+        <p>
+            <label class="label" for="">Tên đăng nhập</label>
+            <input class="input" type="text" minlength="4" maxlength="20" name="" id="" placeholder="Nhập từ 4-20 kí tự">
+        </p>
+        <p>
+            <label class="label" for="">Mật khẩu</label>
+            <input class="input" type="password" minlength="8" maxlength="20" name="" id="" placeholder="Nhập từ 8-20 kí tự">
+        </p>
+
+        <p>
+            <label class="label"> Phái</label>
+            <input type="radio" value="0" name="phai">Nam
+            <input type="radio" value="1" name="phai">Nữ
+        </p>
+        <p>
+            <label class="label" for="">Hình ảnh</label>
+            <input type="file" name="image" id="">
+        </p>
+        <p>
+            <label for="" class="label">Quốc tịch</label>
+            <select name="select" id="">
+                    <option value="0">Việt Nam</option>
+                    <option value="1">Mỹ</option>
+                    <option value="2">Pháp</option>
+                    <option value="3">Trung Quốc</option>
+                    <option value="4">Quốc tịch khác</option>
+                </select>
+        </p>
+
+        <p>
+            <label for="" class="label">Địa Chỉ</label>
+            <textarea class="input" name="ghichu" id="" cols="30" rows="5"></textarea>
+        </p>
+        <p class="end">
+            <input type="reset" value="Làm lại">
+            <input type="submit" value="Đăng Ký">
+        </p>
+    </form>
+</body>
+
+</html>
